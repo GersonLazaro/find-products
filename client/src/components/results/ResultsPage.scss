@@ -1,0 +1,23 @@
+@import '../../styles/partials/variables';
+
+/**
+  * Result page styles
+  */
+.results {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: calc(100% - 64px);
+  }
+    
+  @media (min-width: 1264px) {
+    width: auto;
+    max-width: $max-width-containers;
+  }
+}
+
+
+

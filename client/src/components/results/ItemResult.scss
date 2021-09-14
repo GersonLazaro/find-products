@@ -1,0 +1,79 @@
+@import '../../styles/partials/variables';
+
+/**
+  * Item Result Styles
+  */
+.item {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: $space-s;
+  }
+
+  &__image {
+    border-radius: 4px;
+    height: 150px;
+    margin-right: $space-m;
+    width: 150px; 
+  }
+
+  &__information {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__basic-information {
+    flex-grow: 1;
+  }
+
+  &__price {
+    display: flex;
+  }
+
+  &__amount {
+    display: inline-flex;
+    color: $gray-4;
+    font-size: 24px;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  &__currency {
+    padding-right: 4px;
+  }
+
+  &__free-shipping-icon {
+    display: inline-block;
+    height: 18px;
+    margin: 4px 8px;
+    width: 18px;
+  }
+
+  &__title {
+    color: $gray-4;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  &__ubication {
+    width: 100%;
+    @media (min-width: 768px) {
+      margin-left: $space-s;
+      width: 150px;
+    }
+  }
+
+  &__state {
+    color: $gray-2;
+    font-size: 12px;
+  }
+}

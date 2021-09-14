@@ -1,0 +1,21 @@
+@import '../styles/partials/variables';
+/**
+  * App Styles
+  */
+.wrapper {
+  background-color: $gray-1;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding-bottom: $space-m;
+  }
+}
+
+.wrapper__route {
+  padding-top: 48px;
+}

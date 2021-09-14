@@ -1,0 +1,14 @@
+@import '../../styles/partials/variables';
+/**
+  * BUTTON STYLES
+  */
+.button {
+  background: $blue;
+  border: none;
+  border-radius: 4px;
+  color: $white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 12px;
+  width: 100%;
+}

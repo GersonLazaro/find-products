@@ -1,0 +1,10 @@
+@import '../../styles/partials/variables';
+
+.loading {
+  text-align: center;
+  margin: $space-m auto;
+
+  &__text {
+    font-size: 18px;
+  }
+}

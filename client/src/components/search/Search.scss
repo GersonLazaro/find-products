@@ -1,0 +1,61 @@
+@import '../../styles/partials/variables';
+
+/**
+  * Search styles
+  */
+.search {
+  display: flex;
+  flex-grow: 1;
+  height: 32px;
+  margin-left: 8px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin-left: 32px;
+  }
+
+  &__input {
+    border: none;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    border-radius: 0;
+    color: $gray-2;
+    flex-grow: 1;
+    font-size: 16px;
+    height: 100%;
+    line-height: $line-height-base;
+    padding: 0 $space-s;
+    width: 0;
+  }
+  
+  &__input:focus,
+  &__input:focus-visible {
+    border: none;
+    outline: none;
+  }
+  
+  &__button,
+  &__button:hover,
+  &__button:active,
+  &__button:focus {
+    background-color: $gray-1;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    padding: 8px;    
+    transition: all .3s ease-in-out
+  }
+  
+  &__button:active {
+    background-color: $gray-2;
+  }
+  
+  &__icon {
+    height: 16px;
+    width: 16px;
+  }
+}

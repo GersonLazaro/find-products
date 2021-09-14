@@ -1,0 +1,38 @@
+@import '../../styles/partials/variables';
+/**
+  * BREADCRUMB STYLES
+  */
+.breadcrumb {
+  box-sizing: border-box;
+  margin: $space-s auto;
+  overflow: hidden;
+  padding: 0 $space-s;
+  text-overflow: ellipsis;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    width: calc(100% - 64px);
+  }
+    
+  @media (min-width: 1264px) {
+    width: auto;
+    max-width: $max-width-containers;
+  }
+  
+  &__item {
+    color: $gray-2;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+
+    &--selected {
+      font-weight: bold;
+    }
+  }
+  &__arrow {
+    height: 12px;
+    padding: 0 8px;
+    width: 12px;
+  }
+}

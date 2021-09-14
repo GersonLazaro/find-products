@@ -1,0 +1,82 @@
+@import '../../styles/partials/variables';
+
+/**
+  * Detail Page Styles
+  */
+.detail {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: $max-width-containers;
+  padding: $space-m;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    width: calc(100% - 64px);
+  }
+    
+  @media (min-width: 1264px) {
+    width: auto;
+    max-width: $max-width-containers;
+  }
+
+  &__left-panel {
+    order: 2;
+
+    @media (min-width: 768px) {
+      order: 1;
+      width: 70%;
+    }
+  }
+
+  &__right-panel {
+    margin-bottom: $space-m;
+    flex-grow: 1;
+    order: 1;
+
+    @media (min-width: 768px) {
+      flex-grow: unset;
+      margin-bottom: 0;
+      order: 1;
+      padding-left: $space-m;
+      width: 30%;
+    }
+  }
+
+  &__image {
+    display: block;
+    margin: auto;
+    max-width: 680px;
+    width: 100%;
+  }
+
+  &__description-title {
+    margin: $space-m auto;
+  }
+
+  &__description {
+    color: $gray-3;
+    font-size: 16px;
+    line-height: $line-height-base;
+  }
+
+  &__condition {
+    font-size: 14px;
+    margin: 0 0 $space-s 0;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0 0 $space-m 0;
+  }
+
+  &__amount {
+    font-size: 46px;
+    margin: 0 0 $space-m 0;
+  }
+}
