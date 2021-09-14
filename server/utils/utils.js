@@ -13,8 +13,8 @@ class Utils {
 
   static getDecimalsFromNumber (number) {
     number = Math.abs(parseFloat(number));
-    const intNumber = parseInt(number);
-    return Number((number - intNumber).toFixed(Math.abs(('' + number).length - ('' + number).length - 1)));
+    const decimalNumber = number - Math.floor(number);
+    return parseInt(decimalNumber * 100);
   }
 }
 
